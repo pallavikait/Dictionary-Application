@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="media/dictionaryAppIcon.png" type="image/x-icon">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt="" width="150p" height="45p"></div>
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="themeSwitch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="animated-bg"></div>
+        <div class="sec">
+        <section class="wrapper">
+            <div class="backMusic" title="Press To Play or Pause Music">
+                <i class="fas fa-music"></i>
+            </div>
+            <div class="headings"> <header><pre> <b>ENGLISH DICTIONARY</b></pre></header></div>
+            <div class="searchArea">
+                <input type="text" name="search" id="search" placeholder="Search A Word!" required>
+                <i class="fas fa-search"></i>
+                <span class="material-icons">close</span>
+            </div>
+            <p class="hintText">
+                Type a word and press Enter to search for this word meaning, example, pronunciation & synonyms.
+            </p>
+            <ul>
+                <li class="word">
+                    <div class="word-info">
+                        <p></p>
+                        <span></span>
+                    </div>
+                    <i class="fas fa-volume-up"></i>
+                </li>
+                <div class="content">
+                    <li class="meaning">
+                        <div class="word-info">
+                            <p>Meaning</p>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="example">
+                        <div class="word-info">
+                            <p>Example</p>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="synonyms">
+                        <div class="word-info">
+                            <p>Synonyms</p>
+                            <div class="list">
+                                <!-- <span>glad,</span>
+                                <span>contented,</span>
+                                <span>delighted,</span>
+                                <span>cheerful,</span>
+                                <span>joyful</span> -->
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </section>
+    </div>
+    
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 All Rights Reserved By DICTOFY
+    </footer>
+    <script src="script.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
